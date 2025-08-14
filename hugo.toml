@@ -1,4 +1,4 @@
-baseURL = 'https://newvillage.io/'
+baseURL = 'https://newvillage.studio/'
 languageCode = 'en-us'
 title = 'New Village'
 theme = 'PaperMod'

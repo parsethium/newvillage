@@ -9,10 +9,6 @@
 <p> After years of thinking about it, I finally bought 21 T-shirts, screen-printed the backs, and added a little block-printed bonus on the front. I’m selling them—probably just to buy more sketchbooks.
 If you want to buy one, send me a message on instagram at: @in.newvillage</p>
 
-<button onclick="window.open('http://innewvillage.bigcartel.com/product/test','_blank')" class="buy-button">
-  Buy Now
-</button>
-
 
 <style>
   .slideshow-container {
