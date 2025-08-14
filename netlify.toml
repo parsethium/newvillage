@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "[build]
+  HUGO_VERSION = "[build]"
   command = "hugo"
   publish = "public"
 
