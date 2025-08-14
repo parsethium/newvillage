@@ -1,0 +1,147 @@
+<style>
+  #carousel-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  #carousel-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+
+  #carousel-image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust this if your images are taller */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  #carousel-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #carousel-desc {
+    min-height: 2.5em;
+    margin-top: 12px;
+    font-size: 1rem;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  #prev-btn {
+    left: 10px;
+  }
+
+  #next-btn {
+    right: 10px;
+  }
+</style>
+
+<div id="carousel-wrapper">
+  <h2 id="carousel-title"></h2>
+  <div id="carousel-image-container">
+    <button id="prev-btn" class="carousel-btn" onclick="prevSlide()">&#8592;</button>
+    <img id="carousel-img" src="{{ "images/1.png" | relURL }}" alt="carousel image">
+    <button id="next-btn" class="carousel-btn" onclick="nextSlide()">&#8594;</button>
+  </div>
+  <p id="carousel-desc">Description for image 1.</p>
+</div>
+
+
+<script>
+  const slides = [
+    {
+      img: "{{ "images/1.png" | relURL }}",
+      desc: "When in Paris"
+    },
+    {
+      img: "{{ "images/2.png" | relURL }}",
+      desc: "Conformism - Basque/Spain"
+    },
+    {
+      img: "{{ "images/3.png" | relURL }}",
+      desc: "I can do anything, yet I do nothing - Asturias/Spain"
+    },
+    {
+      img: "{{ "images/4.png" | relURL }}",
+      desc: ""
+    },
+    {
+      img: "{{ "images/6.png" | relURL }}",
+      desc: "The flow - Istanbul/Turkey"
+    },
+    {
+      img: "{{ "images/7.jpg" | relURL }}",
+      desc: "Day off with aunt"
+    },
+    {
+      img: "{{ "images/8.png" | relURL }}",
+      desc: "Paralyzed by my own culture"
+    },
+    {
+      img: "{{ "images/9.png" | relURL }}",
+      desc: "Beautiful but dangerous"
+    },
+    {
+      img: "{{ "images/10.png" | relURL }}",
+      desc: "Lets point fingers! - Tehran/Iran"
+    },
+    {
+      img: "{{ "images/11.png" | relURL }}",
+      desc: "Officially in war - Shahrood/Iran"
+    },
+    {
+      img: "{{ "images/12.png" | relURL }}",
+      desc: "Our jazzy lives - Van/Turkey"
+    },
+    {
+      img: "{{ "images/13.png" | relURL }}",
+      desc: "Mosquitos - Simi/Greece"
+    }
+
+  ];
+
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    const total = slides.length;
+    currentSlide = (index + total) % total;
+    document.getElementById("carousel-img").src = slides[currentSlide].img;
+    document.getElementById("carousel-desc").innerText = slides[currentSlide].desc;
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => showSlide(0));
+</script>

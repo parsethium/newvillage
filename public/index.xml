@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>New Village</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on New Village</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Born in Iran, raised in Malaysia and Sweden, and now based in the Netherlands—I’ve moved around a lot. Through all the changes, New Village has been the one thing that stayed with me.&lt;/p&gt;
+&lt;p&gt;My drawings are instinctual and free-flowing. They begin without a plan—just lines that slowly take shape. Sometimes they don’t mean anything at all. Other times, they reveal something to me much later, when I’ve grown enough to understand them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/shop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/shop/</guid>
+      <description>&lt;div class=&#34;slideshow-container&#34;&gt;
+  &lt;img class=&#34;slide&#34; src=&#34;http://localhost:1313/images/logo.png&#34; style=&#34;display: block;&#34;&gt;
+  &lt;img class=&#34;slide&#34; src=&#34;http://localhost:1313/images/tshirt-back.png&#34; style=&#34;display: none;&#34;&gt;
+  &lt;img class=&#34;slide&#34; src=&#34;http://localhost:1313/images/tshirt-closeup.png&#34; style=&#34;display: none;&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt; After years of thinking about it, I finally bought 21 T-shirts, screen-printed the backs, and added a little block-printed bonus on the front. I’m selling them—probably just to buy more sketchbooks.
+If you want to buy one, send me a message on instagram at: @in.newvillage&lt;/p&gt;
+&lt;button onclick=&#34;window.open(&#39;http://innewvillage.bigcartel.com/product/test&#39;,&#39;_blank&#39;)&#34; class=&#34;buy-button&#34;&gt;
+  Buy Now
+&lt;/button&gt;
+&lt;style&gt;
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+  }
+
+  .slide {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .buy-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .buy-button:hover {
+    background: #444;
+  }
+&lt;/style&gt;
+&lt;script&gt;
+  document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
+    let current = 0;
+    const slides = document.querySelectorAll(&#34;.slide&#34;);
+    if (!slides.length) return;
+
+    setInterval(() =&gt; {
+      slides[current].style.display = &#34;none&#34;;
+      current = (current + 1) % slides.length;
+      slides[current].style.display = &#34;block&#34;;
+    }, 3000);
+  });
+&lt;/script&gt;</description>
+    </item>
+  </channel>
+</rss>

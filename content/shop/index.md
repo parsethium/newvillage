@@ -1,0 +1,55 @@
+
+
+<div class="slideshow-container">
+  <img class="slide" src="/images/logo.png" style="display: block;">
+  <img class="slide" src="/images/tshirt-back.png" style="display: none;">
+  <img class="slide" src="/images/tshirt-closeup.png" style="display: none;">
+</div>
+
+<p> After years of thinking about it, I finally bought 21 T-shirts, screen-printed the backs, and added a little block-printed bonus on the front. I’m selling them—probably just to buy more sketchbooks.
+If you want to buy one, send me a message on instagram at: @in.newvillage</p>
+
+<button onclick="window.open('http://innewvillage.bigcartel.com/product/test','_blank')" class="buy-button">
+  Buy Now
+</button>
+
+
+<style>
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+  }
+
+  .slide {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .buy-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .buy-button:hover {
+    background: #444;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let current = 0;
+    const slides = document.querySelectorAll(".slide");
+    if (!slides.length) return;
+
+    setInterval(() => {
+      slides[current].style.display = "none";
+      current = (current + 1) % slides.length;
+      slides[current].style.display = "block";
+    }, 3000);
+  });
+</script>
