@@ -3,9 +3,8 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "[build]"
+  HUGO_VERSION = "hugo v0.148.2+extended+withdeploy linux/amd64 BuildDate=unknown"
   command = "hugo"
   publish = "public"
 
-[build.environment]
-  HUGO_VERSION = "hugo v0.148.2+extended+withdeploy linux/amd64 BuildDate=unknown"
+
