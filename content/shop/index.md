@@ -1,9 +1,10 @@
 
 
 <div class="slideshow-container">
-  <img class="slide" src="/images/logo.png" style="display: block;">
-  <img class="slide" src="/images/tshirt-back.png" style="display: none;">
-  <img class="slide" src="/images/tshirt-closeup.png" style="display: none;">
+  <img class="slide" src="/images/back.webp" style="display: block;">
+  <img class="slide" src="/images/front.webp" style="display: none;">
+  <img class="slide" src="/images/climbing.webp" style="display: none;">
+  <img class="slide" src="/images/frontzoom.webp" style="display: none;">
 </div>
 
 <p> After years of thinking about it, I finally bought 21 T-shirts, screen-printed the backs, and added a little block-printed bonus on the front. I’m selling them—probably just to buy more sketchbooks.
