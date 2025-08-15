@@ -10,6 +10,8 @@
 If you want to buy one, send me a message on instagram at: @in.newvillage</p>
 
 
+
+
 <style>
   .slideshow-container {
     max-width: 100%;

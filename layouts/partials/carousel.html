@@ -13,41 +13,44 @@
 }
 
 
-  #carousel-image-container {
-    position: relative;
-    width: 100%;
-    height: 500px; /* Adjust this if your images are taller */
-    overflow: hidden;
-    border-radius: 10px;
-  }
+ #carousel-image-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  /* background-color: #f8f8f8; */ /* remove this line */
+}
 
-  #carousel-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-  }
+#carousel-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* ensures full image is visible */
+}
 
-  #carousel-desc {
-    min-height: 2.5em;
-    margin-top: 12px;
-    font-size: 1rem;
-  }
+#carousel-desc {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
 
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.6);
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    line-height: 1;
-    border-radius: 50%;
-    z-index: 2;
-  }
+.carousel-btn {
+  position: absolute;
+  top: 50%;  /* stays vertically centered in the container */
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  border-radius: 50%;
+  z-index: 2;
+}
+
 
   .carousel-btn:hover {
     background: rgba(255, 255, 255, 0.9);
@@ -76,51 +79,51 @@
 <script>
   const slides = [
     {
-      img: "{{ "images/1.png" | relURL }}",
+      img: "{{ "images/1.webp" | relURL }}",
       desc: "When in Paris"
     },
     {
-      img: "{{ "images/2.png" | relURL }}",
+      img: "{{ "images/2.webp" | relURL }}",
       desc: "Conformism - Basque/Spain"
     },
     {
-      img: "{{ "images/3.png" | relURL }}",
+      img: "{{ "images/3.webp" | relURL }}",
       desc: "I can do anything, yet I do nothing - Asturias/Spain"
     },
     {
-      img: "{{ "images/4.png" | relURL }}",
+      img: "{{ "images/4.webp" | relURL }}",
       desc: ""
     },
     {
-      img: "{{ "images/6.png" | relURL }}",
+      img: "{{ "images/6.webp" | relURL }}",
       desc: "The flow - Istanbul/Turkey"
     },
     {
-      img: "{{ "images/7.jpg" | relURL }}",
+      img: "{{ "images/7.webp" | relURL }}",
       desc: "Day off with aunt"
     },
     {
-      img: "{{ "images/8.png" | relURL }}",
+      img: "{{ "images/8.webp" | relURL }}",
       desc: "Paralyzed by my own culture"
     },
     {
-      img: "{{ "images/9.png" | relURL }}",
+      img: "{{ "images/9.webp" | relURL }}",
       desc: "Beautiful but dangerous"
     },
     {
-      img: "{{ "images/10.png" | relURL }}",
+      img: "{{ "images/10.webp" | relURL }}",
       desc: "Lets point fingers! - Tehran/Iran"
     },
     {
-      img: "{{ "images/11.png" | relURL }}",
+      img: "{{ "images/11.webp" | relURL }}",
       desc: "Officially in war - Shahrood/Iran"
     },
     {
-      img: "{{ "images/12.png" | relURL }}",
+      img: "{{ "images/12.webp" | relURL }}",
       desc: "Our jazzy lives - Van/Turkey"
     },
     {
-      img: "{{ "images/13.png" | relURL }}",
+      img: "{{ "images/13.webp" | relURL }}",
       desc: "Mosquitos - Simi/Greece"
     }
 
