@@ -10,7 +10,7 @@
 <div class="shop-container">
   <!-- Product 1 -->
   <div class="product-card">
-    <img src="/images/jazzy.webp" alt="Our Jazzy Lives" class="product-image" onclick="openModal('/images/jazzy.webp', 'Our Jazzy Lives Print', 'Our Jazzy Lives is one of my personal favourites. It captures the hectic and uncertain nature of a society in war — drawn subconsciously after I had seen Picasso’s Guernica in Madrid just two weeks earlier. Screen printed on heavy 290g paper, with random red accents spread across the prints, making each one unique.', '18€', 'https://buy.stripe.com/9B63cv6G87BK7TRcHi0VO03')">
+    <img src="/images/jazzy.webp" alt="Our Jazzy Lives" class="product-image" onclick="openModal('/images/jazzy.webp', 'Our Jazzy Lives Print', 'Our Jazzy Lives is one of my personal favourites. It captures the hectic and uncertain nature of a society in war — drawn subconsciously after I had seen Picasso’s Guernica in Madrid just two weeks earlier. Screen printed on heavy A3 290g paper, with random red accents spread across the prints, making each one unique.', '18€', 'https://buy.stripe.com/9B63cv6G87BK7TRcHi0VO03')">
     <h3 class="product-title">Our Jazzy Lives</h3>
     <p class="product-price">18€</p>
     <a href="https://buy.stripe.com/9B63cv6G87BK7TRcHi0VO03" target="_blank" class="buy-button">Buy Now</a>
