@@ -6,6 +6,8 @@ theme = 'PaperMod'
 
 
 
+
+
 [params]
 
   ShowReadingTime = false
@@ -16,6 +18,7 @@ theme = 'PaperMod'
   ShowWordCount = false
   defaultTheme = "light"
   disableThemeToggle = true
+
 
 
 [markup]

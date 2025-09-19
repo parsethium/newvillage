@@ -20,51 +20,20 @@
       <link>http://localhost:1313/shop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/shop/</guid>
-      <description>&lt;div class=&#34;slideshow-container&#34;&gt;
-  &lt;img class=&#34;slide&#34; src=&#34;http://localhost:1313/images/logo.png&#34; style=&#34;display: block;&#34;&gt;
-  &lt;img class=&#34;slide&#34; src=&#34;http://localhost:1313/images/tshirt-back.png&#34; style=&#34;display: none;&#34;&gt;
-  &lt;img class=&#34;slide&#34; src=&#34;http://localhost:1313/images/tshirt-closeup.png&#34; style=&#34;display: none;&#34;&gt;
-&lt;/div&gt;
-&lt;p&gt; After years of thinking about it, I finally bought 21 T-shirts, screen-printed the backs, and added a little block-printed bonus on the front. I’m selling them—probably just to buy more sketchbooks.
-If you want to buy one, send me a message on instagram at: @in.newvillage&lt;/p&gt;
-&lt;style&gt;
-  .slideshow-container {
-    max-width: 100%;
-    position: relative;
-  }
-
-  .slide {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  .buy-button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    font-family: inherit;
-  }
-
-  .buy-button:hover {
-    background: #444;
-  }
-&lt;/style&gt;
-&lt;script&gt;
-  document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
-    let current = 0;
-    const slides = document.querySelectorAll(&#34;.slide&#34;);
-    if (!slides.length) return;
-
-    setInterval(() =&gt; {
-      slides[current].style.display = &#34;none&#34;;
-      current = (current + 1) % slides.length;
-      slides[current].style.display = &#34;block&#34;;
-    }, 3000);
-  });
-&lt;/script&gt;</description>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;title&gt;Webshop with Image Modal&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&#34;shop-container&#34;&gt;
+  &lt;!-- Product 1 --&gt;
+  &lt;div class=&#34;product-card&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/jazzy.webp&#34; alt=&#34;Our Jazzy Lives&#34; class=&#34;product-image&#34; onclick=&#34;openModal(&#39;/images/jazzy.webp&#39;, &#39;Our Jazzy Lives Print&#39;, &#39;Our Jazzy Lives is one of my personal favourites. It captures the hectic and uncertain nature of a society in war — drawn subconsciously after I had seen Picasso’s Guernica in Madrid just two weeks earlier. Screen printed on heavy 290g paper, with random red accents spread across the prints, making each one unique.&#39;, &#39;18€&#39;, &#39;https://buy.stripe.com/9B63cv6G87BK7TRcHi0VO03&#39;)&#34;&gt;
+    &lt;h3 class=&#34;product-title&#34;&gt;Our Jazzy Lives&lt;/h3&gt;
+    &lt;p class=&#34;product-price&#34;&gt;18€&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

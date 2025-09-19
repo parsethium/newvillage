@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Carousel</title>
+    <!-- Google Fonts that match your artistic style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Permanent+Marker&family=Caveat:wght@400;500;600;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+<body>
+
 <style>
   #carousel-wrapper {
     position: relative;
@@ -7,50 +20,54 @@
   }
 
   #carousel-title {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
 
+  #carousel-image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
- #carousel-image-container {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 10px;
-  /* background-color: #f8f8f8; */ /* remove this line */
-}
+  #carousel-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 
-#carousel-img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* ensures full image is visible */
-}
+  #carousel-desc {
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #444;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    /* Add a subtle artistic touch */
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+  }
 
-#carousel-desc {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;  /* stays vertically centered in the container */
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.6);
-  border: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  line-height: 1;
-  border-radius: 50%;
-  z-index: 2;
-}
-
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    z-index: 2;
+  }
 
   .carousel-btn:hover {
     background: rgba(255, 255, 255, 0.9);
@@ -66,67 +83,64 @@
 </style>
 
 <div id="carousel-wrapper">
-  <h2 id="carousel-title"></h2>
   <div id="carousel-image-container">
     <button id="prev-btn" class="carousel-btn" onclick="prevSlide()">&#8592;</button>
-    <img id="carousel-img" src="{{ "images/1.png" | relURL }}" alt="carousel image">
+    <img id="carousel-img" src="/images/1.webp" alt="carousel image">
     <button id="next-btn" class="carousel-btn" onclick="nextSlide()">&#8594;</button>
   </div>
-  <p id="carousel-desc">Description for image 1.</p>
+  <p id="carousel-desc">When in Paris</p>
 </div>
-
 
 <script>
   const slides = [
     {
-      img: "{{ "images/1.webp" | relURL }}",
+      img: "/images/1.webp",
       desc: "When in Paris"
     },
     {
-      img: "{{ "images/2.webp" | relURL }}",
+      img: "/images/2.webp",
       desc: "Conformism - Basque/Spain"
     },
     {
-      img: "{{ "images/3.webp" | relURL }}",
+      img: "/images/3.webp",
       desc: "I can do anything, yet I do nothing - Asturias/Spain"
     },
     {
-      img: "{{ "images/4.webp" | relURL }}",
+      img: "/images/4.webp",
       desc: ""
     },
     {
-      img: "{{ "images/6.webp" | relURL }}",
+      img: "/images/6.webp",
       desc: "The flow - Istanbul/Turkey"
     },
     {
-      img: "{{ "images/7.webp" | relURL }}",
+      img: "/images/7.webp",
       desc: "Day off with aunt"
     },
     {
-      img: "{{ "images/8.webp" | relURL }}",
+      img: "/images/8.webp",
       desc: "Paralyzed by my own culture"
     },
     {
-      img: "{{ "images/9.webp" | relURL }}",
+      img: "/images/9.webp",
       desc: "Beautiful but dangerous"
     },
     {
-      img: "{{ "images/10.webp" | relURL }}",
+      img: "/images/10.webp",
       desc: "Lets point fingers! - Tehran/Iran"
     },
     {
-      img: "{{ "images/11.webp" | relURL }}",
+      img: "/images/11.webp",
       desc: "Officially in war - Shahrood/Iran"
     },
     {
-      img: "{{ "images/12.webp" | relURL }}",
+      img: "/images/12.webp",
       desc: "Our jazzy lives - Van/Turkey"
     },
     {
-      img: "{{ "images/13.webp" | relURL }}",
+      img: "/images/13.webp",
       desc: "Mosquitos - Simi/Greece"
     }
-
   ];
 
   let currentSlide = 0;
@@ -148,3 +162,8 @@
 
   document.addEventListener("DOMContentLoaded", () => showSlide(0));
 </script>
+
+<link rel="icon" href="/images/favicon.png" type="image/png">
+
+</body>
+</html>

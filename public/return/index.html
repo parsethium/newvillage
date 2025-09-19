@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Status - New Village</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .success { color: #28a745; }
+        .error { color: #dc3545; }
+        .loading { color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="payment-status">Payment Status</h1>
+<div id="status">
+  <!-- Status will be shown here -->
+</div>
+
+
+        <div id="status">
+            <div class="loading">Checking payment status...</div>
+        </div>
+    </div>
+
+    <script>
+        const stripe = Stripe('pk_live_51S01iYEz6EB322aqLq6wNSwnIDQTBe4x0UhVWjZHjxieDHMQn81DOpGPoAxYLZBheLcqwqRFVX06BnggXx9DD9Mz005SwgxlgK');
+
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const sessionId = urlParams.get('session_id');
+
+        if (sessionId) {
+            stripe.retrieveCheckoutSession(sessionId).then(({ session }) => {
+                const statusDiv = document.getElementById('status');
+
+                if (session.status === 'complete') {
+                    statusDiv.innerHTML = `
+                        <div class="success">
+                            <h2>✅ Payment Successful!</h2>
+                            <p>Thank you for your purchase. You should receive a confirmation email shortly.</p>
+                            <p><a href="/">Return to Home</a></p>
+                        </div>
+                    `;
+                } else {
+                    statusDiv.innerHTML = `
+                        <div class="error">
+                            <h2>❌ Payment Failed</h2>
+                            <p>Something went wrong with your payment. Please try again.</p>
+                            <p><a href="/checkout">Try Again</a></p>
+                        </div>
+                    `;
+                }
+            }).catch(error => {
+                console.error('Error retrieving session:', error);
+                document.getElementById('status').innerHTML = `
+                    <div class="error">
+                        <h2>Error</h2>
+                        <p>Unable to retrieve payment status. Please contact support.</p>
+                    </div>
+                `;
+            });
+        } else {
+            document.getElementById('status').innerHTML = `
+                <div class="error">
+                    <h2>Invalid Request</h2>
+                    <p>No session ID found. Please try again.</p>
+                    <p><a href="/checkout">Go to Checkout</a></p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

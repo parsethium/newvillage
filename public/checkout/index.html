@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - New Village</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        #checkout {
+            margin-top: 20px;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="complete-your-purchase">Complete Your Purchase</h1>
+<div id="checkout">
+  <!-- Checkout will render here -->
+</div>
+
+
+        <div id="checkout">
+            <div class="loading">Loading checkout...</div>
+        </div>
+    </div>
+
+    <script>
+        
+        const stripe = Stripe('pk_live_51S01iYEz6EB322aqLq6wNSwnIDQTBe4x0UhVWjZHjxieDHMQn81DOpGPoAxYLZBheLcqwqRFVX06BnggXx9DD9Mz005SwgxlgK');
+
+        
+        const priceId = 'price_1S02vCEz6EB322aq5jxHWAc5';
+
+        let checkout;
+
+        initialize();
+
+        async function initialize() {
+            try {
+                const response = await fetch('/.netlify/functions/create-checkout-session', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        price_id: priceId,
+                        quantity: 1
+                    })
+                });
+
+                const { clientSecret } = await response.json();
+
+                checkout = await stripe.initEmbeddedCheckout({
+                    clientSecret: clientSecret,
+                });
+
+                
+                checkout.mount('#checkout');
+            } catch (error) {
+                console.error('Error initializing checkout:', error);
+                document.getElementById('checkout').innerHTML =
+                    '<p style="color: red;">Error loading checkout. Please try again.</p>';
+            }
+        }
+    </script>
+</body>
+</html>
