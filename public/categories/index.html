@@ -33,11 +33,55 @@
 
 <body class="list" id="top">
 
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Josefin+Sans:wght@600;700&family=Zen+Dots&display=swap');
+
+  .logo a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 1.8rem !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    letter-spacing: 0.4px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+    line-height: 1.2;
+  }
+
+  .logo a:hover {
+    color: #555 !important;
+  }
+
+   
+  #menu span,
+  #menu a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .logo a {
+      font-size: 1.5rem !important;
+    }
+
+    #menu span,
+    #menu a {
+      font-size: 1rem !important;
+    }
+  }
+</style>
+
 <header class="header">
   <nav class="nav">
     <div class="logo"><a href="http://localhost:1313/" accesskey="h" title="New Village (Alt + H)">
-        <img src="/images/logos.png" alt="New Village"
-             style="height: 65px; position: relative; top: 15px;">
+        New Village
       </a>
 
       <div class="logo-switches">
@@ -49,18 +93,27 @@
           <a href="http://localhost:1313/shop/"
              title="Shop"
              >
-              <img src="/images/shop.png"
-                   alt="Shop"
-                   style="height: 30px; position: relative; top: 15px;" />
+              <span>
+                Shop
+              </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/events/"
+             title="Events"
+             >
+              <span>
+                Events
+              </span>
           </a>
         </li>
         <li>
           <a href="http://localhost:1313/about/"
              title="About"
              >
-              <img src="/images/about.png"
-                   alt="About"
-                   style="height: 50px; position: relative; top: 0px;" />
+              <span>
+                About
+              </span>
           </a>
         </li>
     </ul>

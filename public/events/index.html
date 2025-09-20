@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>New Village</title>
+<meta name="keywords" content="">
+<meta name="description" content=" - New Village">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/events/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/events/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Josefin+Sans:wght@600;700&family=Zen+Dots&display=swap');
+
+  .logo a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 1.8rem !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    letter-spacing: 0.4px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+    line-height: 1.2;
+  }
+
+  .logo a:hover {
+    color: #555 !important;
+  }
+
+   
+  #menu span,
+  #menu a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .logo a {
+      font-size: 1.5rem !important;
+    }
+
+    #menu span,
+    #menu a {
+      font-size: 1rem !important;
+    }
+  }
+</style>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo"><a href="http://localhost:1313/" accesskey="h" title="New Village (Alt + H)">
+        New Village
+      </a>
+
+      <div class="logo-switches">
+      </div>
+    </div>
+
+    <ul id="menu">
+        <li>
+          <a href="http://localhost:1313/shop/"
+             title="Shop"
+             >
+              <span>
+                Shop
+              </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/events/"
+             title="Events"
+             >
+              <span class="active">
+                Events
+              </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/about/"
+             title="About"
+             >
+              <span>
+                About
+              </span>
+          </a>
+        </li>
+    </ul>
+
+  </nav>
+</header>
+<main class="main">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Josefin+Sans:wght@600;700&family=Zen+Dots&display=swap" rel="stylesheet">
+
+<style>
+  .events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .page-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: #333;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .event-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .event-image-container {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .event-main-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+    background: #fafafa;
+  }
+
+  .event-main-image:hover {
+    transform: scale(1.02);
+  }
+
+  .event-gallery-indicator {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .event-date {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2px;
+  }
+
+  .event-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+  }
+
+  .event-description {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    letter-spacing: 0.1px;
+  }
+
+   
+  .events-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    animation: fadeIn 0.3s ease;
+  }
+
+  .events-modal-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .events-modal-body {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .events-modal-image {
+    max-width: 100%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    animation: scaleIn 0.3s ease;
+  }
+
+  .events-modal-info {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.95);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+    backdrop-filter: blur(10px);
+  }
+
+  .events-modal-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .events-modal-counter {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .events-close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    background: rgba(0,0,0,0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .events-close-button:hover {
+    background: rgba(0,0,0,0.8);
+    transform: scale(1.1);
+  }
+
+   
+  .gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 1001;
+  }
+
+  .gallery-nav:hover {
+    background: rgba(0,0,0,0.8);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .gallery-prev {
+    left: 30px;
+  }
+
+  .gallery-next {
+    right: 30px;
+  }
+
+   
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+   
+  @media (max-width: 768px) {
+    .events-container {
+      padding: 1rem;
+    }
+
+    .page-title {
+      font-size: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+    }
+
+    .event-card {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .event-main-image {
+      height: auto;
+      max-height: 300px;
+    }
+
+    .events-close-button {
+      top: 10px;
+      right: 15px;
+      font-size: 30px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .gallery-nav {
+      padding: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    .gallery-prev {
+      left: 15px;
+    }
+
+    .gallery-next {
+      right: 15px;
+    }
+
+    .events-modal-info {
+      bottom: -80px;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .events-modal-info {
+      position: static;
+      transform: none;
+      margin-top: 1rem;
+    }
+  }
+</style>
+
+<div class="events-container">
+  <h1 class="page-title"></h1>
+
+  
+  <h2 class="section-title">Past Events</h2>
+  <div class="events-grid">
+
+    <div class="event-card">
+      <div class="event-image-container" onclick="openEventsModal('past1', 'Art Event', 0)">
+        <img src="/images/events/silk.webp" alt="Art Event" class="event-main-image">
+        <div class="event-gallery-indicator">📷 4 photos</div>
+      </div>
+      <div class="event-info">
+        <div class="event-date">September 14th, 2025</div>
+        <h3 class="event-title">Art Event   Jönköping/Sweden</h3>
+        <p class="event-description">My first-ever art event, featuring the Silk Road collection, alongside my talented friend Josef Yousri playing live jazz to tie everything together, in the heart of Jönköping—a city that means so much to me.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="eventsModal" class="events-modal" onclick="closeEventsModal()">
+  <div class="events-modal-content" onclick="event.stopPropagation()">
+    <span class="events-close-button" onclick="closeEventsModal()">&times;</span>
+    <button class="gallery-nav gallery-prev" onclick="prevEventImage()">&#8592;</button>
+    <button class="gallery-nav gallery-next" onclick="nextEventImage()">&#8594;</button>
+
+    <div class="events-modal-body">
+      <img id="eventsModalImage" src="" alt="" class="events-modal-image">
+      <div class="events-modal-info">
+        <h3 id="eventsModalTitle" class="events-modal-title"></h3>
+        <p id="eventsModalCounter" class="events-modal-counter"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  const eventGalleries = {
+    'upcoming1': {
+      title: 'Art Exhibition Opening',
+      images: [
+        '/images/events/.webp',
+        '/images/events/upcoming1-2.webp',
+        '/images/events/upcoming1-3.webp',
+        '/images/events/upcoming1-4.webp',
+        '/images/events/upcoming1-5.webp'
+      ]
+    },
+    'past1': {
+      title: 'Art Event',
+      images: [
+        '/images/events/jkpg2.webp',
+        '/images/events/jkpg1.webp',
+        '/images/events/jkpg3.webp',
+        '/images/events/jkpg4.webp',
+
+      ]
+    }
+  };
+
+  let currentEventGallery = null;
+  let currentEventImageIndex = 0;
+
+  function openEventsModal(eventId, eventTitle, imageIndex) {
+    currentEventGallery = eventGalleries[eventId];
+    currentEventImageIndex = imageIndex;
+
+    const modal = document.getElementById('eventsModal');
+    const modalImage = document.getElementById('eventsModalImage');
+    const modalTitle = document.getElementById('eventsModalTitle');
+    const modalCounter = document.getElementById('eventsModalCounter');
+
+    modal.style.display = 'block';
+    modalImage.src = currentEventGallery.images[currentEventImageIndex];
+    modalImage.alt = eventTitle;
+    modalTitle.textContent = eventTitle;
+    modalCounter.textContent = `${currentEventImageIndex + 1} / ${currentEventGallery.images.length}`;
+
+    
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeEventsModal() {
+    const modal = document.getElementById('eventsModal');
+    modal.style.display = 'none';
+
+    
+    document.body.style.overflow = 'auto';
+  }
+
+  function nextEventImage() {
+    if (currentEventGallery && currentEventImageIndex < currentEventGallery.images.length - 1) {
+      currentEventImageIndex++;
+      updateEventModalImage();
+    }
+  }
+
+  function prevEventImage() {
+    if (currentEventGallery && currentEventImageIndex > 0) {
+      currentEventImageIndex--;
+      updateEventModalImage();
+    }
+  }
+
+  function updateEventModalImage() {
+    const modalImage = document.getElementById('eventsModalImage');
+    const modalCounter = document.getElementById('eventsModalCounter');
+
+    modalImage.src = currentEventGallery.images[currentEventImageIndex];
+    modalCounter.textContent = `${currentEventImageIndex + 1} / ${currentEventGallery.images.length}`;
+  }
+
+  
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closeEventsModal();
+    } else if (event.key === 'ArrowRight') {
+      nextEventImage();
+    } else if (event.key === 'ArrowLeft') {
+      prevEventImage();
+    }
+  });
+
+  
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  document.getElementById('eventsModal').addEventListener('touchstart', function(event) {
+    touchStartX = event.changedTouches[0].screenX;
+  });
+
+  document.getElementById('eventsModal').addEventListener('touchend', function(event) {
+    touchEndX = event.changedTouches[0].screenX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        
+        nextEventImage();
+      } else {
+        
+        prevEventImage();
+      }
+    }
+  }
+</script>
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">New Village</a></span> · 
+
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

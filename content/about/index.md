@@ -1,3 +1,5 @@
+
+
 Born in Iran, raised in Malaysia and Sweden, and now based in the Netherlands—I’ve moved around a lot. Through all the changes, New Village has been the one thing that stayed with me.
 
 My drawings are instinctual and free-flowing. They begin without a plan—just lines that slowly take shape. Sometimes they don’t mean anything at all. Other times, they reveal something to me much later, when I’ve grown enough to understand them.

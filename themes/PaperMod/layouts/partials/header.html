@@ -29,13 +29,57 @@
   </script>
 {{- end }}
 
+<!-- Custom CSS for Logo Font -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Josefin+Sans:wght@600;700&family=Zen+Dots&display=swap');
+
+  .logo a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 1.8rem !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    letter-spacing: 0.4px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+    line-height: 1.2;
+  }
+
+  .logo a:hover {
+    color: #555 !important;
+  }
+
+  /* Menu styling */
+  #menu span,
+  #menu a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 768px) {
+    .logo a {
+      font-size: 1.5rem !important;
+    }
+
+    #menu span,
+    #menu a {
+      font-size: 1rem !important;
+    }
+  }
+</style>
+
 <header class="header">
   <nav class="nav">
     <div class="logo">
-      {{- /* Main Logo */ -}}
+      {{- /* Text Logo instead of Image */ -}}
       <a href="{{ "/" | absLangURL }}" accesskey="h" title="{{ site.Params.label.text | default site.Title }} (Alt + H)">
-        <img src="{{ "images/logos.png" | relURL }}" alt="{{ site.Title }}"
-             style="height: 65px; position: relative; top: 15px;">
+        {{ site.Title }}
       </a>
 
       <div class="logo-switches">

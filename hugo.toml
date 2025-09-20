@@ -3,13 +3,7 @@ languageCode = 'en-us'
 title = 'New Village'
 theme = 'PaperMod'
 
-
-
-
-
-
 [params]
-
   ShowReadingTime = false
   ShowShareButtons = false
   ShowPostNavLinks = true
@@ -19,30 +13,23 @@ theme = 'PaperMod'
   defaultTheme = "light"
   disableThemeToggle = true
 
-
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
-
-
 [menu]
+  [[menu.main]]
+  name = "Shop"
+  url = "/Shop/"
+  weight = 1
 
-    [[menu.main]]
-    name = "Shop"
-    url = "/Shop/"
-    weight = 1
-    [menu.main.params]
-    image = "images/shop.png"
-    style = "height: 30px; position: relative; top: 15px;"
+  [[menu.main]]
+  name = "Events"
+  url = "/events/"
+  weight = 2
+  [[menu.main]]
 
-    [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
-    [menu.main.params]
-    image = "images/about.png"
-    style = "height: 50px; position: relative; top: 0px;"
-
+  name = "About"
+  url = "/about/"
+  weight = 3

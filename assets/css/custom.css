@@ -1,0 +1,47 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Josefin+Sans:wght@600&family=Zen+Dots&display=swap');
+
+/* Menu items styling */
+.main-nav a,
+#menu a,
+.menu a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+    font-size: 1.1rem !important;
+}
+
+/* Site title styling */
+.logo,
+.main-nav .logo a,
+h1.site-title,
+.site-title a {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+}
+
+/* Page titles and headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-nav a,
+    #menu a,
+    .menu a {
+        font-size: 1rem !important;
+    }
+}

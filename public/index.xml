@@ -17,6 +17,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/shop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/shop/</guid>
@@ -31,7 +38,7 @@
 &lt;div class=&#34;shop-container&#34;&gt;
   &lt;!-- Product 1 --&gt;
   &lt;div class=&#34;product-card&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/images/jazzy.webp&#34; alt=&#34;Our Jazzy Lives&#34; class=&#34;product-image&#34; onclick=&#34;openModal(&#39;/images/jazzy.webp&#39;, &#39;Our Jazzy Lives Print&#39;, &#39;Our Jazzy Lives is one of my personal favourites. It captures the hectic and uncertain nature of a society in war — drawn subconsciously after I had seen Picasso’s Guernica in Madrid just two weeks earlier. Screen printed on heavy 290g paper, with random red accents spread across the prints, making each one unique.&#39;, &#39;18€&#39;, &#39;https://buy.stripe.com/9B63cv6G87BK7TRcHi0VO03&#39;)&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/jazzy.webp&#34; alt=&#34;Our Jazzy Lives&#34; class=&#34;product-image&#34; onclick=&#34;openModal(&#39;/images/jazzy.webp&#39;, &#39;Our Jazzy Lives Print&#39;, &#39;Our Jazzy Lives is one of my personal favourites. It captures the hectic and uncertain nature of a society in war — drawn subconsciously after I had seen Picasso’s Guernica in Madrid just two weeks earlier. Screen printed on heavy A3 290g paper, with random red accents spread across the prints, making each one unique.&#39;, &#39;18€&#39;, &#39;https://buy.stripe.com/9B63cv6G87BK7TRcHi0VO03&#39;)&#34;&gt;
     &lt;h3 class=&#34;product-title&#34;&gt;Our Jazzy Lives&lt;/h3&gt;
     &lt;p class=&#34;product-price&#34;&gt;18€&lt;/p&gt;</description>
     </item>
