@@ -314,17 +314,59 @@
       right: 15px;
     }
 
+    /* Fix mobile modal layout */
+    .events-modal-content {
+      padding: 10px;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 60px;
+    }
+
+    .events-modal-body {
+      flex-direction: column;
+      max-width: 95vw;
+      max-height: none;
+      gap: 1rem;
+    }
+
+    .events-modal-image {
+      max-height: 60vh;
+    }
+
     .events-modal-info {
-      bottom: -80px;
-      padding: 0.8rem 1.5rem;
+      position: static;
+      transform: none;
+      background: rgba(255,255,255,0.95);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      min-width: auto;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      margin-top: 0;
     }
   }
 
   @media (max-width: 480px) {
+    .events-modal-content {
+      padding: 5px;
+      padding-top: 50px;
+    }
+
+    .events-modal-image {
+      max-height: 50vh;
+    }
+
     .events-modal-info {
-      position: static;
-      transform: none;
-      margin-top: 1rem;
+      padding: 0.8rem 1rem;
+    }
+
+    .events-modal-title {
+      font-size: 1.1rem;
+    }
+
+    .events-modal-counter {
+      font-size: 0.85rem;
     }
   }
 </style>
@@ -332,7 +374,7 @@
 <div class="events-container">
   <h1 class="page-title"></h1>
 
-  <!-- Upcoming Events
+  <!-- Upcoming Events --
   <h2 class="section-title">Upcoming Events</h2>
   <div class="events-grid">
 
@@ -347,10 +389,9 @@
         <p class="event-description">Join us for the opening night of our latest exhibition featuring contemporary works from emerging artists. Wine, music, and inspiring conversations await.</p>
       </div>
     </div>
-
   </div>
 
-  <!-- Past Events -->
+ <!-- Past Events -->
   <h2 class="section-title">Past Events</h2>
   <div class="events-grid">
 
@@ -365,9 +406,6 @@
         <p class="event-description">My first-ever art event, featuring the Silk Road collection, alongside my talented friend Josef Yousri playing live jazz to tie everything together, in the heart of Jönköping—a city that means so much to me.</p>
       </div>
     </div>
-
-  </div>
-</div>
 
 <!-- Modal for Events Gallery -->
 <div id="eventsModal" class="events-modal" onclick="closeEventsModal()">
@@ -392,7 +430,7 @@
     'upcoming1': {
       title: 'Art Exhibition Opening',
       images: [
-        '/images/events/.webp',
+        '/images/events/upcoming1-1.webp',
         '/images/events/upcoming1-2.webp',
         '/images/events/upcoming1-3.webp',
         '/images/events/upcoming1-4.webp',
@@ -406,9 +444,8 @@
         '/images/events/jkpg1.webp',
         '/images/events/jkpg3.webp',
         '/images/events/jkpg4.webp',
-
       ]
-    }
+    },
   };
 
   let currentEventGallery = null;
