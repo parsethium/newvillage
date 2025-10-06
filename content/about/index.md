@@ -8,4 +8,4 @@ This path has been full of learning, unlearning, and a lot of self-discovery. It
 
 That’s why I’m here. I’m choosing to show up for my work, for myself, and for the version of me that’s been quietly building New Village all along.
 
-Contact: in.newvillage@proton.me
+Contact: info@newvillage.studio
