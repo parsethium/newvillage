@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Village</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-    
+{{ define "main" }}
 <div class="container shop-page">
     <div class="title-wrapper">
         <h1 class="site-title" id="siteTitle" data-original-text="New Village" data-variant-text="NV     ABOUT" data-page="shop">New Village</h1>
     </div>
 
-    
+    <!-- Desktop Layout -->
     <div class="desktop-layout">
         <h2 class="prints-header">PRINTS</h2>
 
@@ -37,7 +25,7 @@
         </div>
     </div>
 
-    
+    <!-- Mobile Layout -->
     <div class="mobile-layout">
         <h2 class="prints-header-mobile">PRINTS</h2>
 
@@ -58,10 +46,4 @@
         </div>
     </div>
 </div>
-
-    <footer class="site-footer">
-        <p>newvillage studio - 2025</p>
-    </footer>
-    <script src="/js/animation.js"></script>
-</body>
-</html>
+{{ end }}

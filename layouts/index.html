@@ -1,5 +1,112 @@
 {{ define "main" }}
-  {{ partial "carousel.html" . }}
-  {{ .Render "list" }}
-{{ end }}
+<div class="container">
+    <div class="title-wrapper">
+        <h1 class="site-title" id="siteTitle" data-original-text="New Village" data-variant-text="NV SHOP ABOUT" data-page="home">New Village</h1>
+    </div>
 
+    <!-- Desktop Layout -->
+    <div class="desktop-layout">
+        <!-- Landscape images first -->
+        <div class="image-item landscape">
+            <img src="/images/captain.webp" alt="captain">
+            <p class="caption">captain of your boat leading you to despair</p>
+        </div>
+
+        <div class="image-item landscape">
+            <img src="/images/brewery.webp" alt="brewery">
+            <p class="caption">the brewery</p>
+        </div>
+
+        <div class="image-item landscape">
+            <img src="/images/ace.webp" alt="ace">
+            <p class="caption">ace</p>
+        </div>
+
+        <div class="image-item landscape">
+            <img src="/images/pipe.webp" alt="pipe">
+            <p class="caption">pipe</p>
+        </div>
+
+        <div class="image-item landscape">
+            <img src="/images/joker.webp" alt="joker">
+            <p class="caption">joker</p>
+        </div>
+
+        <!-- Then portrait images -->
+        <div class="image-item portrait">
+            <img src="/images/hats.webp" alt="hats">
+            <p class="caption">hats</p>
+        </div>
+
+        <div class="image-item portrait">
+            <img src="/images/worms.webp" alt="worms">
+            <p class="caption">worms</p>
+        </div>
+
+        <div class="image-item portrait">
+            <img src="/images/faces.webp" alt="faces">
+            <p class="caption">faces</p>
+        </div>
+
+        <div class="image-item portrait">
+            <img src="/images/brains.webp" alt="brains">
+            <p class="caption">brains</p>
+        </div>
+
+        <div class="image-item portrait">
+            <img src="/images/walle.webp" alt="overheating">
+            <p class="caption">overheating</p>
+        </div>
+    </div>
+
+    <!-- Mobile Layout -->
+    <div class="mobile-layout">
+        <!-- Portrait images first on mobile -->
+        <div class="image-item">
+            <img src="/images/hats.webp" alt="hats">
+            <p class="caption">hats</p>
+        </div>
+
+        <div class="image-item">
+            <img src="/images/worms.webp" alt="worms">
+            <p class="caption">worms</p>
+        </div>
+
+        <div class="image-item">
+            <img src="/images/faces.webp" alt="faces">
+            <p class="caption">faces</p>
+        </div>
+
+        <div class="image-item">
+            <img src="/images/brains.webp" alt="brains">
+            <p class="caption">brains</p>
+        </div>
+
+        <div class="image-item">
+            <img src="/images/walle.webp" alt="overheating">
+            <p class="caption">overheating</p>
+        </div>
+
+        <!-- Then landscape images on mobile -->
+        <div class="image-item">
+            <img src="/images/captain.webp" alt="captain">
+            <p class="caption">captain of your boat leading you to despair</p>
+        </div>
+
+        <div class="image-item">
+            <img src="/images/brewery.webp" alt="brewery">
+            <p class="caption">the brewery</p>
+        </div>
+
+        <div class="image-item">
+            <img src="/images/ace.webp" alt="ace">
+            <p class="caption">ace</p>
+        </div>
+
+        <div class="image-item">
+            <img src="/images/pipe.webp" alt="pipe">
+            <p class="caption">pipe</p>
+        </div>
+    </div>
+</div>
+{{ end }}

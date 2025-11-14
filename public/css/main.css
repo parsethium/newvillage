@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+/* Title */
+.title-wrapper {
+    text-align: center;
+    padding: 66px 0;
+}
+
+.site-title {
+    font-size: 128px;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 875px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+.site-title .menu-item {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.site-title .menu-item:hover {
+    opacity: 0.7;
+}
+
+/* Desktop Layout */
+.desktop-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 0 50px;
+}
+
+.mobile-layout {
+    display: none;
+}
+
+.image-item {
+    text-align: center;
+    width: 100%;
+}
+
+/* Desktop - Landscape images (wider) */
+.desktop-layout .image-item.landscape {
+    max-width: 1273px;
+}
+
+.desktop-layout .image-item.landscape img {
+    width: 100%;
+    height: auto;
+    max-height: 814px;
+    object-fit: cover;
+}
+
+/* Desktop - Portrait images (taller) */
+.desktop-layout .image-item.portrait {
+    max-width: 575px;
+}
+
+.desktop-layout .image-item.portrait img {
+    width: 100%;
+    height: auto;
+    max-height: 914px;
+    object-fit: cover;
+}
+
+.caption {
+    font-size: 36px;
+    margin-top: 20px;
+    line-height: normal;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .desktop-layout {
+        display: none;
+    }
+
+    .mobile-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 0 33px;
+    }
+
+    .title-wrapper {
+        padding: 53px 0;
+    }
+
+    .site-title {
+        font-size: 36px;
+        min-width: auto;
+        white-space: nowrap;
+    }
+
+    /* Mobile - Portrait images (taller, displayed first) */
+    .mobile-layout .image-item:nth-child(-n+5) {
+        max-width: 328px;
+    }
+
+    .mobile-layout .image-item:nth-child(-n+5) img {
+        width: 100%;
+        height: auto;
+        max-height: 521px;
+        object-fit: cover;
+    }
+
+    /* Mobile - Landscape images (wider, displayed after portrait) */
+    .mobile-layout .image-item:nth-child(n+6) {
+        max-width: 326px;
+    }
+
+    .mobile-layout .image-item:nth-child(n+6) img {
+        width: 100%;
+        height: auto;
+        max-height: 249px;
+        object-fit: cover;
+    }
+
+    .caption {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1400px) {
+    .desktop-layout .image-item.landscape,
+    .desktop-layout .image-item.portrait {
+        max-width: 900px;
+    }
+}
+
+/* About Page Styles */
+.about-text {
+    max-width: 1600px;
+    padding: 0 160px;
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.about-text p {
+    margin-bottom: 40px;
+}
+
+.about-text-mobile {
+    padding: 0 27px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.about-text-mobile p {
+    margin-bottom: 16px;
+}
+
+/* Shop Page Styles */
+.prints-header {
+    font-size: 64px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-position: from-font;
+    margin-bottom: 30px;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.product-title {
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.product-image {
+    max-width: 1180px;
+    margin: 0 auto 30px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-height: 714px;
+    object-fit: cover;
+}
+
+.buy-button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 40px;
+    padding: 6px 30px;
+    cursor: pointer;
+    min-width: 141px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buy-button:hover {
+    opacity: 0.8;
+}
+
+/* Mobile Shop Styles */
+.prints-header-mobile {
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-position: from-font;
+    margin-bottom: 20px;
+}
+
+.product-mobile {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.product-title-mobile {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.product-image-mobile {
+    max-width: 318px;
+    margin: 0 auto 20px;
+}
+
+.product-image-mobile img {
+    width: 100%;
+    height: auto;
+    max-height: 192px;
+    object-fit: cover;
+}
+
+.buy-button-mobile {
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    padding: 4px 20px;
+    cursor: pointer;
+    min-width: 69px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buy-button-mobile:hover {
+    opacity: 0.8;
+}
+
+/* Mobile styles for about and shop */
+@media (max-width: 768px) {
+    .about-page .desktop-layout,
+    .shop-page .desktop-layout {
+        display: none;
+    }
+
+    .about-page .mobile-layout,
+    .shop-page .mobile-layout {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .about-page .mobile-layout,
+    .shop-page .mobile-layout {
+        display: none;
+    }
+
+    .about-page .desktop-layout,
+    .shop-page .desktop-layout {
+        display: flex;
+    }
+}
+
+/* Footer Styles */
+.site-footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 100px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 30px 20px;
+        margin-top: 60px;
+        font-size: 12px;
+    }
+}
