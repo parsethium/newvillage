@@ -1,35 +1,4 @@
-baseURL = 'https://newvillage.studio/'
+baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'New Village'
-theme = 'PaperMod'
-
-[params]
-  ShowReadingTime = false
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = false
-  ShowWordCount = false
-  defaultTheme = "light"
-  disableThemeToggle = true
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-[menu]
-  [[menu.main]]
-  name = "Shop"
-  url = "/Shop/"
-  weight = 1
-
-  [[menu.main]]
-  name = "Events"
-  url = "/events/"
-  weight = 2
-  [[menu.main]]
-
-  name = "About"
-  url = "/about/"
-  weight = 3
+disableKinds = ['taxonomy', 'term']
