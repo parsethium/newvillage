@@ -9,6 +9,8 @@
         <div class="contact-form-wrapper">
             <h2 class="form-title">Get in Touch</h2>
             <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                <input type="hidden" name="subject" value="New message from New Village contact form (%{submissionId})" />
+
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -34,6 +36,8 @@
         <div class="contact-form-wrapper-mobile">
             <h2 class="form-title-mobile">Get in Touch</h2>
             <form name="contact" method="POST" data-netlify="true" class="contact-form-mobile">
+                <input type="hidden" name="subject" value="New message from New Village contact form (%{submissionId})" />
+
                 <div class="form-group-mobile">
                     <label for="name-mobile">Name</label>
                     <input type="text" id="name-mobile" name="name" required>
